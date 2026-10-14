@@ -43,11 +43,10 @@ jobs:
           publish_branch: gh-pages
           commit_message: "Auto-deploy from CI pipeline"
 
-          # Step 4: Chấm điểm website tự động với Lighthouse CI
-      - name: Run Lighthouse Audit
-        uses: treosh/lighthouse-ci-action@v11
-        with:
-          urls: |
-            https://wynnie936.github.io/devops-lab1-portfolio/
-          uploadArtifacts: true
-          temporaryPublicStorage: true
+         # Step 4: Chấm điểm website tự động với Lighthouse CI
+  - name: Run Lighthouse Audit
+    uses: treosh/lighthouse-ci-action@v11
+    with:
+      urls: |
+        https://wynnie936.github.io/devops-lab1-portfolio/
+      uploadArtifacts: true
