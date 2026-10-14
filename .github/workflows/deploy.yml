@@ -8,7 +8,7 @@ name: Deploy to GitHub Pages
 # === Khi nào pipeline chạy? ===
 on:
   push:
-    branches: [main]       # Chạy khi push lên nhánh main
+    branches: [main, gh-pages]      # Chạy khi push lên nhánh main
   workflow_dispatch:        # Cho phép chạy thủ công từ GitHub UI
 
 # === Các job trong pipeline ===
